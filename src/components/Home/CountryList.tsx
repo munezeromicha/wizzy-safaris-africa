@@ -11,10 +11,8 @@ const countries = [
     tours: 1,
     image: img3,
     description:
-      "Embarking on a gorilla trek in the misty, emerald peaks of Rwanda is an experience that transcends words. The heart pounds with anticipation as we step into the lush, untamed wilderness, surrounded by the raw beauty of the Volcanoes National Park. Every footstep feels sacred, a pilgrimage through nature's sanctuary.\n\n" +
-      "Suddenly, we are face-to-face with the gentle giants of the forest — the mountain gorillas. Time seems to stand still. There’s a powerful, almost indescribable connection that stirs deep emotions. Their soulful eyes meet ours, silently telling stories of survival, strength, and the shared threads of life that bind all living beings.\n\n" +
-      "It’s a moment of profound humility and gratitude. Watching these magnificent creatures interact with their families, so tender and yet so strong, reminds us of the fragile balance of life and the urgency to protect it. The experience is not just an encounter — it’s a stirring, transformative journey into the heart of nature, leaving us with a sense of wonder that lingers long after the trek has ended. It feels sacred, a pilgrimage through nature's sanctuary.",
-  },
+  " Embarking on a gorilla trek in the misty, emerald peaks of Rwanda is an experience that transcends words. The heart pounds with anticipation as we step into the lush, untamed wilderness, surrounded by the raw beauty of the Volcanoes National Park. Every footstep feels sacred, a pilgrimage through nature's sanctuary. Suddenly, we are face-to-face with the gentle giants of the forest — the mountain gorillas. Time seems to stand still. There’s a powerful, almost indescribable connection that stirs deep emotions. Their soulful eyes meet ours, silently telling stories of survival, strength, and the shared threads of life that bind all living beings. It’s a moment of profound humility and gratitude. Watching these magnificent creatures interact with their families, so tender and yet so strong, reminds us of the fragile balance of life and the urgency to protect it. The experience is not just an encounter — it’s a stirring, transformative journey into the heart of nature, leaving us with a sense of wonder that lingers long after the trek has ended. It feels sacred, a pilgrimage through nature's sanctuary."
+},
 
   {
     country: "Tanzania",
