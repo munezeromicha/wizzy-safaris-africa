@@ -14,7 +14,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 }) => {
   const navigate = useNavigate()
   const handleNavigation = () => {
-    navigate('/underDevelopment')
+    navigate('/Tourism')
   }
   return (
     <div className="relative">

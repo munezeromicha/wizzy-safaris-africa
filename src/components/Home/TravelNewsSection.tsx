@@ -8,19 +8,16 @@ const newsData = [
     title: "AKAGERA NATIONAL PARK, RWANDA",
     date: "September 6, 2024",
     imageUrl: masai,
-    link: "/akagera-national-park",
   },
   {
     title: "EAST AFRICA'S 10 BEST TRAVEL DESTINATIONS",
     date: "September 3, 2024",
     imageUrl: img2,
-    link: "/east-africa-destinations",
   },
   {
     title: "GORILLA TREKKING ADVENTURE IN RWANDA",
     date: "August 29, 2024",
     imageUrl: img1,
-    link: "/gorilla-trekking-rwanda",
   },
 ];
 
@@ -40,9 +37,7 @@ const TravelNewsSection: React.FC = () => {
               key={index}
               title={newsItem.title}
               date={newsItem.date}
-              imageUrl={newsItem.imageUrl}
-              link={newsItem.link}
-            />
+              imageUrl={newsItem.imageUrl} link={""} />
           ))}
         </div>
         <div className="mt-8 text-center">

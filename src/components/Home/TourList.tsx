@@ -64,9 +64,7 @@ const TourList: React.FC = () => {
         ))}
       </div>
       <div className="flex justify-center mt-10">
-        <button className="bg-yellow-600 text-white py-2 px-6 rounded-lg hover:bg-brown-700">
-          Discover More
-        </button>
+       
       </div>
     </div>
   );

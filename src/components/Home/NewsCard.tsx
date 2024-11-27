@@ -7,7 +7,7 @@ interface NewsCardProps {
   link: string;
 }
 
-const NewsCard: React.FC<NewsCardProps> = ({ title, date, imageUrl, link }) => {
+const NewsCard: React.FC<NewsCardProps> = ({ title, date, imageUrl}) => {
   return (
     <div className="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden">
       <img className="w-full h-48 object-cover" src={imageUrl} alt={title} />
@@ -18,12 +18,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ title, date, imageUrl, link }) => {
           </span>
         </div>
         <h3 className="text-lg font-bold text-gray-900">{title}</h3>
-        <a
-          href={link}
-          className="inline-block mt-4 text-orange-500 font-semibold hover:text-orange-600"
-        >
-          Read More
-        </a>
+       
       </div>
     </div>
   );

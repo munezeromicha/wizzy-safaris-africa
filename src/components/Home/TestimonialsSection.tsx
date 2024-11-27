@@ -1,27 +1,30 @@
 import React from "react";
 import TestimonialCard from "./TestimonialCard";
-import Avatar from "../../assets/Images/Avatar.jpg"
+import Avatar1 from "../../assets/Images/avatar1.png";
+import Avatar2 from "../../assets/Images/Ellipse 2.png";
+import Avatar3 from "../../assets/Images/cover.png";
+
 
 const testimonials = [
   {
-    name: "Avatar",
-    avatar: Avatar,
+    name: "Bertrand",
+    avatar: Avatar1,
     rating: 5,
     review:
       "The tour was amazing, best service from the director Alain all the way...",
     platform: "Industry",
   },
   {
-    name: "Avatar",
-    avatar: Avatar,
+    name: "Divine",
+    avatar: Avatar2,
     rating: 5,
     review:
       "Thank you Africa wizzy Safaris Rwanda for the amazing day of Gorilla Trekking...",
     platform: "Industry",
   },
   {
-    name: "Avatar",
-    avatar: Avatar,
+    name: "Ines",
+    avatar: Avatar3,
     rating: 5,
     review:
       "I had the privilege of embarking on a two-week trip through Rwanda...",
