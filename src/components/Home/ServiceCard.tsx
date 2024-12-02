@@ -12,10 +12,26 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   imageSrc,
   buttonLabel,
 }) => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const handleNavigation = () => {
-    navigate('/Tourism')
-  }
+    switch (title) {
+      case "Tourism":
+        navigate("/Tourism");
+        break;
+      case "Gorilla Permits":
+        navigate("/gorilla-permit");
+        break;
+      case "Hotel Reservation":
+        navigate("/hotel-reservation");
+        break;
+      case "Car Rental":
+        navigate("/car-rental");
+        break;
+      default:
+        navigate("/");
+    }
+  };
+
   return (
     <div className="relative">
       <img src={imageSrc} alt={title} className="object-cover w-full h-full" />

@@ -11,6 +11,9 @@ import './index.css'
 import NoPageFound from "./Pages/NoPage";
 import UnderDevelopment from "./Pages/UnderDevelopment";
 import Tourism from "./Pages/tourism";
+import GorillaPermits from "./Pages/gorilla-permits";
+import HotelReservation from "./Pages/hotel-reservation"; 
+import CarRental from "./Pages/car-rental";
 import CountryContents from "./Pages/CountryContents";
 const SafariLanding: React.FC = () => {
   return (
@@ -20,6 +23,9 @@ const SafariLanding: React.FC = () => {
     <Route index element={<Home />} />
     <Route path="about" element={<About />} />
     <Route path="tourism" element={<Tourism />} />
+    <Route path="gorilla-permit" element={<GorillaPermits/>}/>
+    <Route path="hotel-reservation" element={<HotelReservation/>}/>
+    <Route path="car-rental" element={<CarRental/>}/>
     <Route path="services" element={<Services />} />
     <Route path="contact" element={<Contact />} />
     <Route path="travelInsight" element={<TravelInsight />} />

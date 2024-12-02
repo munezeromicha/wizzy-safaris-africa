@@ -1,118 +1,116 @@
-import React, { useState, useEffect } from "react";
-import { FaArrowLeft } from "react-icons/fa";
-import img2 from "../assets/Images/IMG-20240928-WA0093.jpg";
-import img3 from "../assets/Images/IMG-20240928-WA0094.jpg";
-import img4 from "../assets/Images/IMG-20240928-WA0095.jpg";
-import "tailwindcss/tailwind.css";
+import React from "react";
+import backgroundVideo from "../../src/assets/Images/VID-20240928-WA0029.mp4";
+import { Link } from "react-router-dom";
 
-const images = [img2, img3, img4];
-
-const Tourism: React.FC = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); 
-
-    return () => clearInterval(interval);
-  }, []);
-
+const HotelReservation: React.FC = () => {
   const goBack = () => {
-    window.history.back(); 
+    window.history.back();
   };
 
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-screen bg-white p-4">
-      <button
-        onClick={goBack}
-        className="absolute top-22 left-6 bg-green-200 p-6 rounded-full shadow-md hover:bg-green-600 transition"
+    <div className="relative min-h-screen">
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-40"
       >
-        <FaArrowLeft className="text-black" />
-      </button>
-      <img
-        src={images[currentImageIndex]}
-        alt="Tourism"
-        className="w-[70vw] h-[60vh] object-cover mb-4 rounded-lg shadow-lg transition-transform duration-500 ease-in-out"
-      />
-      <div className="w-[70vw] text-center">
-        <h1 className="text-black text-xl text-start md:text-xl font-bold mb-2">
-          🌍 Tourism: Explore the Heart of Africa
-        </h1>
-        <p className="text-black text-start mb-4">
-          Step into a world of wonder with our expertly curated tours that
-          showcase Africa's diverse beauty. Marvel at the vast savannahs of the
-          Serengeti, where wildlife roams freely under endless skies. Witness
-          the awe-inspiring waterfalls of Rwanda and discover the serenity of
-          Zanzibar’s pristine beaches. Explore bustling markets, ancient ruins,
-          and cultural festivals that celebrate Africa’s heritage. From the
-          iconic Big Five safaris to peaceful eco-tours, every moment is crafted
-          to immerse you in Africa’s rich natural and cultural splendor. Let us
-          take you on a journey where adventure and discovery meet.
-        </p>
-        <h1 className="text-black text-xl text-start md:text-xl font-bold mb-2">
-          🦍 Gorilla Permits: Witness the Gentle Giants
-        </h1>
-        <p className="text-black text-start mb-4">
-          Embark on an extraordinary journey to meet the majestic mountain
-          gorillas in their natural habitat. Trek through misty forests, guided
-          by experts who bring the region’s ecology and wildlife to life. Our
-          gorilla trekking tours provide a rare, intimate connection with one of
-          the world’s most endangered species. We simplify the complex
-          permitting process, ensuring a smooth and worry-free experience. Stand
-          face-to-face with these magnificent creatures while knowing your visit
-          contributes to their conservation. Whether you’re an adventurer, a
-          wildlife enthusiast, or a photographer, this experience is truly
-          life-changing.
-        </p>
-        <h1 className="text-black text-xl text-start md:text-xl font-bold mb-2">
-          🏨 Hotel Reservations: Stay in Comfort and Style
-        </h1>
-        <p className="text-black text-start mb-4">
-          Rest easy with Africa Wizzy Safaris, where we handle every detail of
-          your accommodation. From luxury lodges nestled in the wilderness to
-          boutique hotels with stunning vistas, we ensure your stay complements
-          your adventure. Experience authentic African hospitality with modern
-          comforts, tailored to your preferences. Whether you seek a serene
-          retreat after a safari or a vibrant city escape, we’ve got options
-          that suit every traveler. Relax knowing that we’ve partnered with the
-          best accommodations to enhance your journey. Your comfort and
-          satisfaction are our priority, every step of the way.
-        </p>
-        <h1 className="text-black text-xl text-start md:text-xl font-bold mb-2">
-          🚗 Car Rentals: Travel Your Way
-        </h1>
-        <p className="text-black text-start mb-4">
-          Navigate Africa with freedom and flexibility through our car rental
-          services. Choose from rugged 4x4s for off-road adventures, comfortable
-          SUVs for city explorations, or practical sedans for seamless travel.
-          We prioritize safety and reliability, offering well-maintained
-          vehicles that meet your needs. Whether you’re exploring wildlife
-          reserves, visiting cultural sites, or venturing into uncharted
-          territories, our car rental options provide the perfect solution. With
-          professional support and 24/7 availability, you can travel with peace
-          of mind. Discover Africa on your terms with our trusted car rental
-          services.
-        </p>
-        <div className="my-8">
-          <hr className="border-t border-gray-300 my-4" />
+        <source src={backgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
+
+      <div className="relative z-20 container mx-auto px-4 py-8">
+        <button
+          onClick={goBack}
+          className="absolute top-4 left-4 text-white underline bg-green-700 p-3 rounded-full shadow-md hover:bg-green-600 transition"
+        >
+          Back
+        </button>
+        <h1 className="text-4xl font-bold mb-8 text-white text-center">Tourism</h1>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full mb-12">
+          <div>
+            <video 
+              src={backgroundVideo} 
+              controls
+              className="w-full h-[400px] object-cover rounded-lg shadow-lg"
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div className="bg-white/90 p-6 rounded-lg shadow-lg">
+            <h2 className="text-2xl font-semibold mb-4">Africa Wizzy Safaris</h2>
+            <p className="text-lg mb-4">
+              Discover the wonders of Africa with Africa Wizzy Safaris. We offer 
+              unforgettable experiences, from wildlife adventures to cultural 
+              explorations, ensuring a unique and enriching journey.
+            </p>
+            <div className="grid grid-cols-2 gap-4 mb-4">
+              <div className="bg-gray-100 p-4 rounded-lg">
+                <h3 className="font-semibold mb-2">Wildlife Adventures</h3>
+                <ul className="list-disc list-inside">
+                  <li>Safari tours</li>
+                  <li>Big Five encounters</li>
+                  <li>Guided expeditions</li>
+                </ul>
+              </div>
+              <div className="bg-gray-100 p-4 rounded-lg">
+                <h3 className="font-semibold mb-2">Cultural Explorations</h3>
+                <ul className="list-disc list-inside">
+                  <li>Local traditions</li>
+                  <li>Community visits</li>
+                  <li>Authentic experiences</li>
+                </ul>
+              </div>
+            </div>
+            <Link to="/bookings" className="hover:text-orange-400">
+            <button className="bg-[#8A5624] text-white px-6 py-3 rounded-lg hover:bg-[#724820] transition-colors duration-300 w-full">
+                 Book now
+                  </button>
+                </Link>
+          </div>
         </div>
-        <h1 className="text-black text-xl text-start md:text-xl font-bold mb-2">
-          Why Choose Africa Wizzy Safaris?
-        </h1>
-        <p className="text-black text-start mb-4">
-          Personalized Experiences: We tailor every tour to match your unique
-          interests, preferences, and schedule. Travel with seasoned
-          professionals who enrich your journey with insights and stories. We
-          prioritize eco-friendly practices and support local communities.
-          Attention to detail is our hallmark: from gorilla permits to hotel
-          bookings, we manage logistics so you don’t have to. Collaborate with
-          reliable service providers and enjoy unmatched 24/7 support from our
-          team.
-        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl w-full mb-12">
+          <div className="bg-white/90 p-6 rounded-lg shadow-lg text-center">
+            <h3 className="text-xl font-semibold mb-3">Safari Experiences</h3>
+            <p className="text-gray-700">
+              Embark on thrilling wildlife safaris with expert guides, witnessing Africa's 
+              majestic animals in their natural habitat.
+            </p>
+          </div>
+          <div className="bg-white/90 p-6 rounded-lg shadow-lg text-center">
+            <h3 className="text-xl font-semibold mb-3">Cultural Immersion</h3>
+            <p className="text-gray-700">
+              Connect with local communities, learn about traditions, and experience 
+              authentic African hospitality.
+            </p>
+          </div>
+          <div className="bg-white/90 p-6 rounded-lg shadow-lg text-center">
+            <h3 className="text-xl font-semibold mb-3">Adventure Activities</h3>
+            <p className="text-gray-700">
+              From hiking through scenic landscapes to participating in conservation 
+              efforts, experience the best of African adventures.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-[#8A5624] opacity-90 p-8 rounded-lg max-w-2xl w-full text-center mx-auto">
+          <h2 className="text-2xl font-semibold mb-4 text-white">Plan Your Safari Adventure</h2>
+          <p className="text-lg mb-4 text-white">
+            Let our experienced team help you create the perfect African safari experience.
+          </p>
+          <button className="bg-black text-white px-8 py-3 rounded-lg hover:bg-[#724820] transition-colors duration-300">
+          <Link to="/contact" className="hover:text-orange-400">
+                  Contact Us
+                </Link>
+          </button>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Tourism;
+export default HotelReservation;
