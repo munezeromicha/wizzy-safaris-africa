@@ -13,7 +13,7 @@ const HotelReservation: React.FC = () => {
         autoPlay
         loop
         muted
-        className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-40"
+        className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-50"
       >
         <source src={backgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
