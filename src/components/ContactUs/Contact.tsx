@@ -42,7 +42,7 @@ const ContactUs: React.FC = () => {
 
         <div>
           <h3 className="text-2xl font-semibold text-gray-800 mb-6">Our Location</h3>
-          <div className="w-full h-80 bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+          <div className="w-full h-[300px] bg-gray-200 rounded-lg overflow-hidden shadow-lg">
             <iframe
               title="Location Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.5179338418575!2d30.0983584156539!3d-1.944072634465642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19d5ab74a672d383%3A0x1d3ebbdc02c4b812!2sAkagera%20National%20Park!5e0!3m2!1sen!2srw!4v1632938480375!5m2!1sen!2srw"
@@ -50,7 +50,7 @@ const ContactUs: React.FC = () => {
               height="100%"
               allowFullScreen={false}
               loading="lazy"
-              className="border-none"
+              className="border-none w-full h-full"
             ></iframe>
           </div>
         </div>
