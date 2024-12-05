@@ -96,7 +96,7 @@ function Layout() {
             </ul>
           </li>
           <li className="hover:text-yellow-500">
-            <Link to="/travelInsight">Travel Insights</Link>
+            <Link to="/gallery">Garelly</Link>
           </li>
           <li className="hover:text-yellow-500">
             <Link to="/contact">Contact Us</Link>

@@ -41,8 +41,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           <p className="text-gray-500">{platform}</p>
         </div>
       </div>
-      <a href="#" className="text-orange-500 text-center block">
-        Read More
+      <a href="/travelInsight" className="text-white-500 text-center block bg-orange-900 rounded absolute p-2  ml-[110px]">
+        travel insights
       </a>
     </div>
   );

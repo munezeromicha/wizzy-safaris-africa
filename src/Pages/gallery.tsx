@@ -114,8 +114,18 @@ const gallery: React.FC = () => {
     }
   };
 
+  const goBack = () => {
+    window.history.back();
+  };
+
   return (
     <div className={styles.galleryContainer}>
+      <button
+        onClick={goBack}
+        className="absolute top-4 left-4 text-white underline bg-green-700 p-3 rounded-full shadow-md hover:bg-green-600 transition"
+      >
+        back
+      </button>
       <b><h1>Our Portfolio</h1></b>
       <div className={styles.galleryGrid}>
         {currentItems.map((image) => (

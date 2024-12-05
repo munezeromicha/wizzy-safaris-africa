@@ -11,7 +11,7 @@ const testimonials = [
     avatar: Avatar1,
     rating: 5,
     review:
-      "The tour was amazing, best service from the director Alain all the way...",
+      "The tour was amazing, best service from the director Alain all the way",
     platform: "Industry",
   },
   {
@@ -19,7 +19,7 @@ const testimonials = [
     avatar: Avatar2,
     rating: 5,
     review:
-      "Thank you Africa wizzy Safaris Rwanda for the amazing day of Gorilla Trekking...",
+      "Thank you Africa wizzy Safaris Rwanda for the amazing day of Gorilla Trekking",
     platform: "Industry",
   },
   {
@@ -27,7 +27,7 @@ const testimonials = [
     avatar: Avatar3,
     rating: 5,
     review:
-      "I had the privilege of embarking on a two-week trip through Rwanda...",
+      "I had the privilege of embarking on a two-week trip through Rwanda",
     platform: "Industry",
   },
 ];
