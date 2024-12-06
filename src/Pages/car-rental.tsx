@@ -2,6 +2,7 @@ import React from "react";
 import img1 from "../../src/assets/Images/IMG-20240928-WA0112.jpg";
 import backgroundVideo from "../../src/assets/Images/VID-20240928-WA0028.mp4";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer/Footer";
 
 const CarRental: React.FC = () => {
   const goBack = () => {
@@ -9,7 +10,7 @@ const CarRental: React.FC = () => {
   };
 
   return (
-    <div className="relative min-h-screen">
+    <><div className="relative min-h-screen">
       <video
         autoPlay
         loop
@@ -32,17 +33,16 @@ const CarRental: React.FC = () => {
         <h1 className="text-4xl font-bold mb-8 text-white text-center">Car Rental Services</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div>
-            <img 
-              src={img1} 
-              alt="Luxury Car" 
-              className="w-full h-[400px] object-cover rounded-lg shadow-lg"
-            />
+            <img
+              src={img1}
+              alt="Luxury Car"
+              className="w-full h-[400px] object-cover rounded-lg shadow-lg" />
           </div>
           <div className="bg-white/90 p-6 rounded-lg">
             <h2 className="text-2xl font-semibold mb-4">Premium Vehicle Fleet</h2>
             <p className="text-lg mb-4">
-              Explore Rwanda in comfort and style with our diverse fleet of well-maintained vehicles. 
-              Whether you need a rugged 4x4 for safari adventures or a luxury sedan for business travel, 
+              Explore Rwanda in comfort and style with our diverse fleet of well-maintained vehicles.
+              Whether you need a rugged 4x4 for safari adventures or a luxury sedan for business travel,
               we have the perfect vehicle for your journey.
             </p>
             <div className="grid grid-cols-2 gap-4 mb-4">
@@ -66,10 +66,10 @@ const CarRental: React.FC = () => {
               </div>
             </div>
             <Link to="/bookings" className="hover:text-orange-400">
-            <button className="bg-[#8A5624] text-white px-6 py-3 rounded-lg hover:bg-[#724820] transition-colors duration-300 w-full">
-                 Reserve with Tour
-                  </button>
-                </Link>
+              <button className="bg-[#8A5624] text-white px-6 py-3 rounded-lg hover:bg-[#724820] transition-colors duration-300 w-full">
+                Reserve with Tour
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -77,21 +77,21 @@ const CarRental: React.FC = () => {
           <div className="bg-white/90 p-6 rounded-lg text-center">
             <h3 className="text-xl font-semibold mb-3">Driver Services</h3>
             <p className="text-gray-700">
-              Professional, experienced drivers available for your convenience. 
+              Professional, experienced drivers available for your convenience.
               All our drivers are bilingual and know the country well.
             </p>
           </div>
           <div className="bg-white/90 p-6 rounded-lg text-center">
             <h3 className="text-xl font-semibold mb-3">Flexible Rental Terms</h3>
             <p className="text-gray-700">
-              Choose from hourly, daily, weekly, or monthly rental options. 
+              Choose from hourly, daily, weekly, or monthly rental options.
               Competitive rates with special long-term discounts.
             </p>
           </div>
           <div className="bg-white/90 p-6 rounded-lg text-center">
             <h3 className="text-xl font-semibold mb-3">Custom Tours</h3>
             <p className="text-gray-700">
-              Combine your car rental with guided tours. 
+              Combine your car rental with guided tours.
               Create your perfect itinerary with our travel experts.
             </p>
           </div>
@@ -104,13 +104,14 @@ const CarRental: React.FC = () => {
             Contact us for personalized assistance and special rates.
           </p>
           <button className="bg-black text-white px-8 py-3 rounded-lg hover:bg-[#724820] transition-colors duration-300">
-          <Link to="/contact" className="hover:text-orange-400">
-                  Contact Us
-                </Link>
+            <Link to="/contact" className="hover:text-orange-400">
+              Contact Us
+            </Link>
           </button>
         </div>
       </div>
     </div>
+    <Footer /></>
   );
 };
 

@@ -12,6 +12,7 @@ import vid2 from "../assets/Images/VID-20240928-WA0030.mp4";
 import vid3 from "../assets/Images/VID-20240928-WA0028.mp4";
 import  vid from "../assets/Images/vid1.mp4";
 import vid1 from "../assets/Images/Wilderness Bisate - Volcanoes National Park - Rwanda.mp4";
+import Footer from '../components/Footer/Footer';
 const gallery: React.FC = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [currentPage, setCurrentPage] = useState(1);
@@ -119,7 +120,7 @@ const gallery: React.FC = () => {
   };
 
   return (
-    <div className={styles.galleryContainer}>
+    <><div className={styles.galleryContainer}>
       <button
         onClick={goBack}
         className="absolute top-4 left-4 text-white underline bg-green-700 p-3 rounded-full shadow-md hover:bg-green-600 transition"
@@ -137,14 +138,12 @@ const gallery: React.FC = () => {
                 autoPlay
                 muted
                 loop
-                playsInline
-              />
+                playsInline />
             ) : (
               <img
                 src={image.src}
                 alt={image.alt}
-                className={styles.galleryImage}
-              />
+                className={styles.galleryImage} />
             )}
             <div className={styles.imageOverlay}>
               <p>{image.alt}</p>
@@ -161,7 +160,7 @@ const gallery: React.FC = () => {
           Next
         </button>
       </div>
-    </div>
+    </div><Footer /></>
   );
 };
 
