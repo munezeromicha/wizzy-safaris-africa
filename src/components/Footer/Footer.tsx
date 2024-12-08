@@ -1,6 +1,10 @@
 import React from "react";
-import Logo from "../../assets/Images/WhatsApp Image 2024-09-28 at 11.25.29_6405715f.jpg";
+import Logo from "../../assets/Images/Logo-Transparent.png";
 import { Link } from "react-router-dom";
+import rdb from "../../assets/Images/rdb.jpeg";
+import rtta2 from "../../assets/Images/rtta2.png";
+import rwandair from "../../assets/Images/rwandair.jpeg";
+import undp from "../../assets/Images/undp.svg";
 
 const Footer: React.FC = () => {
   return (
@@ -110,6 +114,17 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <div className="container mx-auto px-4 mt-8">
+        <h4 className="text-center font-bold mb-4">Partners</h4>
+        <div className="flex flex-wrap justify-center items-center gap-8">
+          <img src={rdb} alt="RDB" className="h-12 object-contain" />
+          <img src={rtta2} alt="RTTA" className="h-12 object-contain" />
+          <img src={rwandair} alt="RwandAir" className="h-12 object-contain" />
+          <img src={undp} alt="UNDP" className="h-12 object-contain" />
+        </div>
+      </div>
+
       <div className="text-center mt-8 text-sm">
         &copy; 2024 africa-wizzy-safaris
       </div>

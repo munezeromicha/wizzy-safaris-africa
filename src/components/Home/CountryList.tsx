@@ -55,7 +55,7 @@ const countries = [
 
 const CountryList: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 p-8 bg-[#01190d]">
+    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 p-8 bg-white">
       {countries.map((item, index) => (
         <CountryCard
           key={index}

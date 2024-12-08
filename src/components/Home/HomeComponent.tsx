@@ -1,6 +1,6 @@
 import React from "react";
 import ServiceGrid from "./ServiceGrid";
-import AboutUsSection from "./AboutUsSection";
+// import AboutUsSection from "./AboutUsSection";
 import CountryList from "./CountryList";
 import TourList from "./TourList";
 import WhyChooseUs from "./WhyChooseUs";
@@ -14,7 +14,7 @@ const HomeComponent: React.FC = () => {
     <div className="bg-gray-900 text-white font-playwrite">
       <Header />
       <ServiceGrid />
-      <AboutUsSection />
+      {/* <AboutUsSection /> */}
       <CountryList />
       <TourList />
       <WhyChooseUs />
