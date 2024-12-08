@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../assets/Images/WhatsApp Image 2024-09-28 at 12.06.15_9d48ec76.jpg";
+import image from "../../assets/Images/car2.jpg";
 import lions from "../../assets/Images/lions.webp";
 const CommitmentSection: React.FC = () => {
   return (
