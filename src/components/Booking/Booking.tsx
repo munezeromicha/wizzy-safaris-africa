@@ -85,10 +85,17 @@ const Booking: React.FC = () => {
               required
             >
               <option value="">Select a place</option>
-              <option value="beach">Beach</option>
-              <option value="mountains">Mountains</option>
-              <option value="city">City</option>
-              <option value="countryside">Countryside</option>
+              <option value="AKAGERA">AKAGERA National park</option>
+              <option value="NYUNGWE">NYUNGWE National park</option>
+              <option value="VOLCANO">VOLCANO</option>
+              <option value="musanze-cave">Musanze Cave</option>
+              <option value="ellen-gorilla-campus">Ellen de gendereze Gorilla campus</option>
+              <option value="buhanga-eco-park">Buhanga Éco park</option>
+              <option value="lake-kivu">Lake Kivu</option>
+              <option value="nyandungu-eco-park">Nyandungu eco park</option>
+              <option value="kigali-city-tours">Kigali city tours</option>
+              <option value="ethnographic-museum">Ethnographic museum</option>
+              <option value="genocide">Genocide memorial site</option>
             </select>
           </div>
 
@@ -104,11 +111,11 @@ const Booking: React.FC = () => {
               className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
               required
             >
-              <option value="">Select a vehicle</option>
-              <option value="car">Car</option>
-              <option value="bike">Bike</option>
-              <option value="bus">Bus</option>
-              <option value="train">Train</option>
+              <option value="">vehicle</option>
+              <option value="safari-jeep">Safari Jeep</option>
+              <option value="land-cruiser">Land Cruiser</option>
+              <option value="minivan">Minivan</option>
+              <option value="coaster-bus">Coaster Bus</option>
             </select>
           </div>
 
