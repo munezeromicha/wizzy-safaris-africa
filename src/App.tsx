@@ -16,6 +16,7 @@ import HotelReservation from "./Pages/hotel-reservation";
 import CarRental from "./Pages/car-rental";
 import Gallery from "./Pages/gallery"
 import CountryContents from "./Pages/CountryContents";
+import Tariff from "./Pages/tariff";
 const SafariLanding: React.FC = () => {
   return (
     <BrowserRouter>
@@ -24,6 +25,7 @@ const SafariLanding: React.FC = () => {
     <Route index element={<Home />} />
     <Route path="about" element={<About />} />
     <Route path="tourism" element={<Tourism />} />
+    <Route path="tariff" element={<Tariff />} />
     <Route path="gorilla-permit" element={<GorillaPermits/>}/>
     <Route path="hotel-reservation" element={<HotelReservation/>}/>
     <Route path="gallery" element={<Gallery/>}/>
