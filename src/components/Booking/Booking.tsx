@@ -1,18 +1,22 @@
-import React, { useState } from 'react';
-import imgbookingbg from '../../assets/Images/WhatsApp Image 2024-09-28 at 11.56.01_9f0d9e84.jpg';
-import emailjs from 'emailjs-com';
+import React, { useState } from "react";
+import imgbookingbg from "../../assets/Images/WhatsApp Image 2024-09-28 at 11.56.01_9f0d9e84.jpg";
+import emailjs from "emailjs-com";
 
 const Booking: React.FC = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    additionalInfo: '',
-    place: '',
-    vehicle: '',
+    name: "",
+    email: "",
+    phone: "",
+    additionalInfo: "",
+    place: "",
+    vehicle: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -27,33 +31,33 @@ const Booking: React.FC = () => {
       vehicle: formData.vehicle,
       additionalInfo: formData.additionalInfo,
     };
-    const serviceId='service_zlxbkz5';
-    const tamplate='template_y7ozgds';
-    const pub='Pl8WXtMZkOa80fRGT'
+    const serviceId = "service_zlxbkz5";
+    const tamplate = "template_y7ozgds";
+    const pub = "Pl8WXtMZkOa80fRGT";
 
     emailjs
       .send(
         serviceId, // EmailJS service ID
         tamplate, // EmailJS template ID
         templateParams, // Data to be sent
-        pub// EmailJS public key (user ID)
+        pub // EmailJS public key (user ID)
       )
       .then(
         (response) => {
-          console.log('Success!', response.status, response.text);
-          alert('Booking submitted successfully!');
+          console.log("Success!", response.status, response.text);
+          alert("Booking submitted successfully!");
           setFormData({
-            name: '',
-            email: '',
-            phone: '',
-            additionalInfo: '',
-            place: '',
-            vehicle: '',
+            name: "",
+            email: "",
+            phone: "",
+            additionalInfo: "",
+            place: "",
+            vehicle: "",
           });
         },
         (err) => {
-          console.log('Failed...', err);
-          alert('Error sending booking information. Please try again.');
+          console.log("Failed...", err);
+          alert("Error sending booking information. Please try again.");
         }
       );
   };
@@ -73,7 +77,10 @@ const Booking: React.FC = () => {
           </h2>
 
           <div className="mb-4 sm:mb-6">
-            <label htmlFor="place" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="place"
+              className="block text-sm font-medium text-gray-700"
+            >
               Select Place <span className="text-red-500">*</span>
             </label>
             <select
@@ -89,7 +96,9 @@ const Booking: React.FC = () => {
               <option value="NYUNGWE">NYUNGWE National park</option>
               <option value="VOLCANO">VOLCANO</option>
               <option value="musanze-cave">Musanze Cave</option>
-              <option value="ellen-gorilla-campus">Ellen de gendereze Gorilla campus</option>
+              <option value="ellen-gorilla-campus">
+                Ellen DeGeneres Campus of the Dian Fossey Gorilla Fund
+              </option>
               <option value="buhanga-eco-park">Buhanga Éco park</option>
               <option value="lake-kivu">Lake Kivu</option>
               <option value="nyandungu-eco-park">Nyandungu eco park</option>
@@ -100,7 +109,10 @@ const Booking: React.FC = () => {
           </div>
 
           <div className="mb-4 sm:mb-6">
-            <label htmlFor="vehicle" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="vehicle"
+              className="block text-sm font-medium text-gray-700"
+            >
               Select Vehicle <span className="text-red-500">*</span>
             </label>
             <select
@@ -121,7 +133,10 @@ const Booking: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 sm:mb-6">
             <div className="col-span-1">
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-700"
+              >
                 Your Name <span className="text-red-500">*</span>
               </label>
               <input
@@ -137,7 +152,10 @@ const Booking: React.FC = () => {
             </div>
 
             <div className="col-span-1">
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700"
+              >
                 Your Email <span className="text-red-500">*</span>
               </label>
               <input
@@ -153,7 +171,10 @@ const Booking: React.FC = () => {
             </div>
 
             <div className="col-span-1">
-              <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="phone"
+                className="block text-sm font-medium text-gray-700"
+              >
                 Phone Number <span className="text-red-500">*</span>
               </label>
               <input
@@ -170,7 +191,10 @@ const Booking: React.FC = () => {
           </div>
 
           <div className="mb-4 sm:mb-6">
-            <label htmlFor="additionalInfo" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="additionalInfo"
+              className="block text-sm font-medium text-gray-700"
+            >
               Additional Information
             </label>
             <textarea

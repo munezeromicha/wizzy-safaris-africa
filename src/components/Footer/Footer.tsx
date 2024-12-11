@@ -85,16 +85,6 @@ const Footer: React.FC = () => {
                   Tanzania
                 </a>
               </li>
-              <li>
-                <a href="#" className="hover:text-orange-400">
-                  Uganda
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-orange-400">
-                  DRC
-                </a>
-              </li>
             </ul>
           </div>
         </div>

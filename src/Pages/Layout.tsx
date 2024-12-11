@@ -64,8 +64,8 @@ function Layout() {
                 </Link>
               </li>
               <li className="hover:text-yellow-500">
-                <Link to="/travelInsight" onClick={() => setIsOpen(false)}>
-                  Travel Insights
+                <Link to="/gallery" onClick={() => setIsOpen(false)}>
+                  Garelly
                 </Link>
               </li>
               <li className="hover:text-yellow-500">

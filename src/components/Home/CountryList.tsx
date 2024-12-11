@@ -2,9 +2,7 @@ import React from "react";
 import CountryCard from "./CountryCard";
 import img3 from "../../assets/Images/index-3.jpg";
 import img4 from "../../assets/Images/zanz.jpeg";
-import img5 from "../../assets/Images/UG.jpg";
 import img6 from "../../assets/Images/kenya.jpg";
-import img1 from "../../assets/Images/congo.jpg";
 const countries = [
   {
     country: "Rwanda",
@@ -32,24 +30,6 @@ const countries = [
     description:
       "Our journey through the Kenyan forests, immersed in the rich culture of the Maasai tribe, was truly unforgettable. The natural beauty of the landscape — vast savannahs, dense forests, and the distant calls of wildlife — made every moment feel magical. \n\n" +
       "Meeting the Maasai was profound. Their deep connection to the land, vibrant traditions, and welcoming spirit left us in awe. We learned about their way of life, sharing stories around a fire under the stars. It was a humbling experience that reminded us of the importance of harmony with nature and community. This trip will stay with us forever.",
-  },
-
-  {
-    country: "Uganda",
-    tours: 1,
-    image: img5,
-    description:
-      "Our time in the Ugandan forest was like stepping into a hidden paradise. The dense greenery opened up to reveal a serene swamp, where antelopes gathered in peaceful numbers. Watching them gracefully sip from the water, surrounded by the stillness of nature, felt almost otherworldly.\n\n" +
-      "The sight of so many antelopes, moving in harmony, was a reminder of the beauty and balance of life in the wild. The quiet rustle of the forest and the gentle sounds of the animals created a tranquil, unforgettable moment that connected us deeply to the wilderness.",
-  },
-
-  {
-    country: "DRC",
-    tours: 5,
-    image: img1,
-    description:
-      "Our experience at the Livingstone Falls in Congo was nothing short of breathtaking. The sheer power of the falls left us in awe, with the thunderous roar of the water crashing against the rocks creating a humbling sense of nature’s might. Mist rose from the falls, dancing in the sunlight and casting rainbows in the air, a beautiful contrast to the wild, untamed energy of the river.\n\n" +
-      "Standing there, we were overcome by the raw beauty of the landscape — the rushing waters carving their way through the rugged terrain. It was a moment of awe and reflection, where the force of nature and the peace of the surroundings collided, leaving us with a lasting memory of Congo’s untamed wilderness.",
   },
 ];
 

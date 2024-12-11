@@ -1,6 +1,6 @@
 import Layout from "../../Pages/Layout";
 import video from "../../assets/Images/vid1.mp4";
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 function Header() {
   const [showFullText, setShowFullText] = useState(false);
@@ -12,12 +12,19 @@ function Header() {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const fullText = "Africa Wizzy Safaris is a leading travel company dedicated to creating unforgettable safari experiences across Africa, with a special focus on inclusivity for disabled travelers. Our mission is to break barriers and open the wonders of Africa's breathtaking landscapes, wildlife, and culture to everyone, regardless of physical limitations. We offer fully accessible safari packages that are carefully designed to meet the needs of individuals with mobility challenges. From wheelchair-friendly vehicles to accommodations with accessible facilities, every detail is taken into consideration to ensure comfort and safety without compromising the thrill of adventure. At Africa Wizzy Safaris, we believe that everyone deserves the opportunity to experience Africa's beauty and wildlife in a way that is seamless, enjoyable, and empowering. Whether it's a visit to the majestic Serengeti, a tour of the vibrant Maasai Mara, or a peaceful retreat in the heart of the African wilderness, our team is committed to delivering personalized, life-changing experiences for all travelers. Join us on a journey where the spirit of Africa meets accessibility. With Africa Wizzy Safaris, the wild is within reach for everyone.";
+  const fullText = `Africa Wizzy Safaris is a travel company in Rwanda dedicated to providing accessible tourism experiences for all travelers, regardless of physical ability. We specialize in curating unique, inclusive tours that allow everyone to experience the beauty and culture of Rwanda in a way that suits their individual needs.
 
+Our services cater to a wide range of travelers, including people with disabilities, seniors, families, and those seeking budget-friendly options. At Africa Wizzy Safaris, we understand that travel should be an enriching experience for everyone, which is why we offer wheelchair-friendly tours, specialized group travel, and family-friendly safari packages.
+
+We focus on creating memorable experiences in Rwanda's stunning national parks, including Gorilla Trekking in Volcanoes National Park, cultural and historical tours, hiking adventures, and more. Every journey with us is designed to be comfortable, accessible, and enriching, allowing you to explore Rwanda’s natural wonders and vibrant culture with ease.
+
+Our commitment is to make tourism in Rwanda accessible, ensuring that no one is left behind. Whether it’s a guided tour, an adventurous trek, or a cultural exploration, we provide customized solutions that make your dream trip possible.
+
+At Africa Wizzy Safaris, we don’t just take you on a tour we provide experiences that open doors to a world of beauty, culture, and adventure for everyone.`;
   return (
     <div>
       <Layout />
@@ -35,14 +42,13 @@ function Header() {
         <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 md:mb-6 px-4 text-center">
             Travel Beyond <span className="text-orange-500">Barriers</span>,
-            Adventures for Every <span className="text-green-800">Ability</span>!
+            Adventures for Every <span className="text-green-800">Ability</span>
+            !
           </h2>
-          
+
           <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 max-w-7xl">
-            <p className="text-white bg-black bg-opacity-50 p-4 md:p-6 rounded-lg text-sm md:text-base lg:text-lg">
-              {isMobile
-                ? `${fullText.slice(0, 50)}... `
-                : fullText}
+            <p className="text-white  bg-black bg-opacity-50 p-4 md:p-6 rounded-lg text-sm md:text-base lg:text-m">
+              {isMobile ? `${fullText.slice(0, 50)}... ` : fullText}
               {isMobile && (
                 <button
                   onClick={() => setShowFullText(true)}

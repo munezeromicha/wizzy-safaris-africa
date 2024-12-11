@@ -1,4 +1,6 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 interface TourCardProps {
   title: string;
   location: string;
@@ -16,11 +18,20 @@ const TourCard: React.FC<TourCardProps> = ({
   description,
   price,
 }) => {
+  const navigate = useNavigate();
+
+  const handleLearnMore = () => {
+    navigate("/tariff");
+  };
 
   return (
     <div className="relative h-[400px] group">
-      <img src={image} alt={title} className="w-full h-64 object-cover rounded-t" />
-      
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-64 object-cover rounded-t"
+      />
+
       {/* Default View */}
       <div className="p-4 bg-white rounded-b">
         <h3 className="text-l  text-black mb-2">{title}</h3>
@@ -32,7 +43,10 @@ const TourCard: React.FC<TourCardProps> = ({
       <div className="absolute inset-0 bg-black bg-opacity-75 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center p-6">
         <p className="text-white mb-4">{description}</p>
         <p className="text-[#c0703b] font-bold text-lg">{price}</p>
-        <button className="mt-4 bg-[#c0703b] text-white py-2 px-4 rounded hover:bg-[#21140b]">
+        <button
+          onClick={handleLearnMore}
+          className="mt-4 bg-[#c0703b] text-white py-2 px-4 rounded hover:bg-[#21140b]"
+        >
           Learn More
         </button>
       </div>

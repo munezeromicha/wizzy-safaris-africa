@@ -1,14 +1,14 @@
 .tariffContainer {
   padding: 2rem;
   min-height: 100vh;
-  background-color: #f5f5f5;
+  background-color: #001102e3;
 }
 
 .title {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2.5rem;
-  color: #333;
+  color: #e8dfdf;
 }
 
 .cardGrid {
@@ -27,7 +27,7 @@
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-20px);
 }
 
 .imageWrapper {
@@ -65,7 +65,8 @@
 
 .info {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .price {
@@ -90,7 +91,7 @@
 }
 
 .bookButton:hover {
-  background-color: #45a049;
+  background-color: #360a0a;
 }
 
 /* Responsive Design */
@@ -132,7 +133,7 @@
 @keyframes modalFadeIn {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
@@ -208,7 +209,7 @@
 }
 
 .bookNowButton {
-  background-color: #2f855a;
+  background-color: #270808;
   color: white;
   padding: 12px 24px;
   border: none;
@@ -220,4 +221,13 @@
 
 .bookNowButton:hover {
   background-color: #246c48;
+} 
+
+/* For larger screens, make them horizontal again */
+@media (min-width: 640px) {
+  .info {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
 } 
