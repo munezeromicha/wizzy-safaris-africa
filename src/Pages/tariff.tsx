@@ -18,10 +18,55 @@ const Tariff: React.FC = () => {
       id: 1,
       image: tourImg1,
       name: "Gorilla Trekking Adventure",
-      price: "$1500",
+      price: "$1,792",
       days: "3 Days",
       alt: "Mountain Gorilla Tour",
-      description: "Embark on an unforgettable journey into the misty mountains of Rwanda to encounter the majestic mountain gorillas in their natural habitat. This exclusive experience includes professional guides, permits, and comfortable accommodations. Trek through the beautiful Volcanoes National Park, observe these gentle giants up close, and learn about conservation efforts. Package includes meals, transportation, and cultural village visits."
+      description: "Embark on an unforgettable journey into the misty mountains of Rwanda to encounter the majestic mountain gorillas in their natural habitat. This exclusive experience includes professional guides, permits, and comfortable accommodations. Trek through the beautiful Volcanoes National Park, observe these gentle giants up close, and learn about conservation efforts.",
+      packageDetails: {
+        mainDestination: "Volcanoes National Park (Gorillas)",
+        accommodations: "No accommodations",
+        mealsAndDrinks: {
+          included: ["Lunch", "Drinking water"],
+          excluded: ["Breakfast", "Dinner", "Other drinks"]
+        },
+        rates: {
+          "2024": {
+            solo: 1987,
+            group: 1792
+          },
+          "2025": {
+            solo: 1903,
+            group: 1792
+          }
+        },
+        included: [
+          "Park fees (For non-residents)",
+          "Gorilla permits (One per person, non-resident)",
+          "All activities (Unless labeled as optional)",
+          "A professional driver/guide",
+          "All transportation (Unless labeled as optional)",
+          "All Taxes/VAT",
+          "Meals (As specified in the day-by-day section)",
+          "Drinking water (On all days)"
+        ],
+        excluded: [
+          "International flights (From/to home)",
+          "Roundtrip airport transfer",
+          "Additional accommodation before and at the end of the tour",
+          "Tips (Tipping guideline US$10.00 pp per day)",
+          "Personal items (Souvenirs, travel insurance, visa fees, etc.)",
+          "Government imposed increase of taxes and/or park fees"
+        ],
+        importantInfo: {
+          maxGroupSize: 16,
+          minAge: 15,
+          location: {
+            start: "Kigali",
+            end: "Kigali",
+            airport: "Kigali Airport (KGL)"
+          }
+        }
+      }
     },
     {
       id: 2,
@@ -30,80 +75,103 @@ const Tariff: React.FC = () => {
       price: "$800",
       days: "1 Day",
       alt: "Hot Air Balloon Tour",
-      description: "Experience the thrill of a hot air balloon safari in the scenic landscapes of Rwanda. Enjoy breathtaking views of the mountains and valleys as you soar through the sky. This unique adventure includes professional guides, permits, and comfortable accommodations. Package includes meals, transportation, and cultural village visits."
+      description: "Experience the thrill of a hot air balloon safari...",
+      packageDetails: {
+        mainDestination: "Akagera National Park",
+        accommodations: "No accommodations",
+        mealsAndDrinks: {
+          included: ["Breakfast", "Drinking water"],
+          excluded: ["Lunch", "Dinner", "Other drinks"]
+        },
+        rates: {
+          "2024": {
+            solo: 900,
+            group: 800
+          },
+          "2025": {
+            solo: 950,
+            group: 850
+          }
+        },
+        included: [
+          "Balloon safari permit",
+          "Professional pilot and crew",
+          "Safety briefing",
+          "Champagne breakfast",
+          "Transfer to/from launch site",
+          "Flight certificate"
+        ],
+        excluded: [
+          "Hotel pickup/drop-off",
+          "Personal items",
+          "Travel insurance",
+          "Additional activities",
+          "Tips for staff"
+        ],
+        importantInfo: {
+          maxGroupSize: 8,
+          minAge: 6,
+          location: {
+            start: "Akagera National Park",
+            end: "Akagera National Park",
+            airport: "Kigali Airport (KGL)"
+          }
+        }
+      }
     },
     {
       id: 3,
-      image: tourImg3,  
+      image: tourImg3,
       name: "Cultural Experience Tour",
       price: "$1200",
       days: "4 Days",
       alt: "Cultural Tour",
-      description: "Discover the rich cultural heritage of Rwanda through a comprehensive cultural experience tour. Explore the local communities, learn about their traditions, and experience their daily life. This exclusive experience includes professional guides, permits, and comfortable accommodations. Package includes meals, transportation, and cultural village visits."
+      description: "Discover the rich cultural heritage of Rwanda...",
+      packageDetails: {
+        mainDestination: "Various Cultural Sites",
+        accommodations: "Local guesthouses and homestays",
+        mealsAndDrinks: {
+          included: ["Breakfast", "Lunch", "Dinner", "Local beverages"],
+          excluded: ["Imported drinks", "Additional snacks"]
+        },
+        rates: {
+          "2024": {
+            solo: 1400,
+            group: 1200
+          },
+          "2025": {
+            solo: 1450,
+            group: 1250
+          }
+        },
+        included: [
+          "All accommodations",
+          "Local guide and interpreter",
+          "Cultural activities and workshops",
+          "Traditional performances",
+          "Craft-making sessions",
+          "All mentioned meals",
+          "Local transport"
+        ],
+        excluded: [
+          "International flights",
+          "Airport transfers",
+          "Personal expenses",
+          "Tips for guides",
+          "Travel insurance"
+        ],
+        importantInfo: {
+          maxGroupSize: 12,
+          minAge: 8,
+          location: {
+            start: "Kigali",
+            end: "Kigali",
+            airport: "Kigali Airport (KGL)"
+          }
+        }
+      }
     },
-    {
-      id: 4,
-      image: tourImg1,
-      name: "Nyungwe Forest Trek",
-      price: "$1300",
-      days: "3 Days",
-      alt: "Forest Trek Tour",
-      description: "Explore the ancient Nyungwe Forest, home to diverse primates and bird species. Trek through the canopy walkway suspended 60 meters above the forest floor. Experience guided nature walks, chimpanzee tracking, and bird watching. Package includes forest permits, expert guides, accommodation, and meals."
-    },
-    {
-      id: 5,
-      image: tourImg2,
-      name: "Akagera Wildlife Safari",
-      price: "$1800",
-      days: "4 Days",
-      alt: "Wildlife Safari Tour",
-      description: "Discover Rwanda's only savannah park, home to the Big Five. Experience morning and evening game drives, boat safaris on Lake Ihema, and bird watching. Includes luxury lodge accommodation, professional guides, park fees, and all meals."
-    },
-    {
-      id: 6,
-      image: tourImg3,
-      name: "Twin Lakes Adventure",
-      price: "$950",
-      days: "2 Days",
-      alt: "Lakes Adventure Tour",
-      description: "Visit the stunning Lakes Burera and Ruhondo, known as the Twin Lakes. Enjoy kayaking, fishing, and hiking with spectacular views of the Virunga volcanoes. Package includes lakeside accommodation, activities, equipment, and local guide services."
-    },
-    {
-      id: 7,
-      image: tourImg1,
-      name: "Kigali City Experience",
-      price: "$600",
-      days: "2 Days",
-      alt: "City Tour",
-      description: "Immerse yourself in Rwanda's vibrant capital. Visit the Genocide Memorial, local markets, and art galleries. Experience traditional dance performances and cooking classes. Includes hotel stay, city transportation, and cultural activities."
-    },
-    {
-      id: 8,
-      image: tourImg2,
-      name: "Coffee Trail Tour",
-      price: "$750",
-      days: "2 Days",
-      alt: "Coffee Tour",
-      description: "Journey through Rwanda's coffee regions. Learn about coffee cultivation, processing, and roasting. Participate in coffee cupping sessions and meet local farmers. Includes plantation visits, accommodation, and all coffee experiences."
-    },
-    {
-      id: 9,
-      image: tourImg3,
-      name: "Volcanoes Hiking Experience",
-      price: "$1100",
-      days: "3 Days",
-      alt: "Volcano Hiking Tour",
-      description: "Trek the magnificent Virunga volcanoes, including Mt. Bisoke or Mt. Karisimbi. Experience stunning crater lakes and mountain vegetation zones. Package includes hiking permits, equipment, mountain guides, and accommodation."
-    },
-    {
-      id: 10,
-      image: tourImg1,
-      name: "Cultural Village Stay",
-      price: "$850",
-      days: "2 Days",
-      alt: "Cultural Village Tour",
-      description: "Live with local communities in a traditional village setting. Learn traditional crafts, music, and dance. Experience local cuisine and storytelling. Includes homestay accommodation, cultural activities, and traditional meals."
-    }
+    
   ];
 
   const goBack = () => {
@@ -182,10 +250,47 @@ const Tariff: React.FC = () => {
                 <span className={styles.modalDuration}>{selectedTour.days}</span>
               </div>
               <p className={styles.modalDescription}>{selectedTour.description}</p>
+              
+              {selectedTour.packageDetails && (
+                <div className={styles.packageDetails}>
+                  <h3>Package Details</h3>
+                  <p><strong>Main Destination:</strong> {selectedTour.packageDetails.mainDestination}</p>
+                  <p><strong>Accommodations:</strong> {selectedTour.packageDetails.accommodations}</p>
+                  
+                  <h4>Meals & Drinks</h4>
+                  <p><strong>Included:</strong> {selectedTour.packageDetails.mealsAndDrinks.included.join(', ')}</p>
+                  
+                  <h4>Rates Per Person</h4>
+                  {(Object.entries(selectedTour.packageDetails.rates) as [string, { solo: number; group: number }][]).map(([year, rates]) => (
+                    <p key={year}>
+                      {year}: Solo ${rates.solo}, Group ${rates.group}
+                    </p>
+                  ))}
+                  <h4>Included</h4>
+                  <ul>
+                    {selectedTour.packageDetails.included.map((item: React.ReactNode, index: number) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                  
+                  <h4>Excluded</h4>
+                  <ul>
+                    {selectedTour.packageDetails.excluded.map((item: string, index: number) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                  
+                  <h4>Important Information</h4>
+                  <p>Maximum group size: {selectedTour.packageDetails.importantInfo.maxGroupSize}</p>
+                  <p>Minimum age: {selectedTour.packageDetails.importantInfo.minAge} years</p>
+                  <p>Tour starts and ends in: {selectedTour.packageDetails.importantInfo.location.start}</p>
+                </div>
+              )}
+              
               <Link to="/bookings">
-              <button className={styles.bookNowButton}>
-                Book Now
-              </button>
+                <button className={styles.bookNowButton}>
+                  Book Now
+                </button>
               </Link>
             </div>
           </div>
