@@ -149,7 +149,7 @@ const Tariff: React.FC = () => {
       id: 4,
       image: tourImg4,
       name: "3-Day Nyungwe National Park Safari- Chimpanzee Tracking",
-      price: "$2,266",
+      price: "$866",
       days: "3 Day",
       alt: "Hot Air Balloon Tour",
       description:
@@ -219,8 +219,8 @@ const Tariff: React.FC = () => {
     {
       id: 3,
       image: tourImg3,
-      name: "Cultural Experience Tour",
-      price: "$1200",
+      name: "Kwita Izina ceremony/new born baby Gorilla",
+      price: "$900",
       days: "4 Days",
       alt: "Cultural Tour",
       description: "Discover the rich cultural heritage of Rwanda...",
