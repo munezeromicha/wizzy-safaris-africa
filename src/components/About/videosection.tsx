@@ -11,7 +11,6 @@ const VideoSection: React.FC = () => {
                     <source src={alinevid} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                <track kind="subtitles" src="subtitlesAline.vtt" srcLang="en" label="English" />
             </div>
             
         </div>
