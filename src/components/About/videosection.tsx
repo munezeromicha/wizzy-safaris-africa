@@ -9,7 +9,6 @@ const VideoSection: React.FC = () => {
             <div className="video-container pl-[10px] mb-4">
                 <video className="w-full max-w-[600px]" controls>
                     <source src={alinevid} type="video/mp4" />
-                    Your browser does not support the video tag.
                 </video>
             </div>
             
